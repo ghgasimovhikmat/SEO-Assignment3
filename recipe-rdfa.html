@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" prefix="schema: https://schema.org/">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delicious Web Development Cookies Recipe (RDFa)</title>
+  <meta name="description" content="Try our delicious Web Development Cookies recipe—a fun twist on coding snacks that's perfect for a quick treat during your coding break.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Delicious Web Development Cookies Recipe</h1>
+  </header>
+  <main about="" typeof="schema:Recipe">
+    <h2 property="schema:name">Web Development Cookies</h2>
+    <p property="schema:description">A fun and delicious cookies recipe inspired by web development. Perfect for a coding break!</p>
+    <img property="schema:image" src="images/cookies.jpg" alt="Web Development Cookies">
+    <ul>
+      <li><strong>Author:</strong> <span property="schema:author" typeof="schema:Person"><span property="schema:name">Chef Code</span></span></li>
+      <li><strong>Published:</strong> <time property="schema:datePublished" datetime="2023-04-01">April 1, 2023</time></li>
+      <li><strong>Cuisine:</strong> <span property="schema:recipeCuisine">American</span></li>
+      <li><strong>Category:</strong> <span property="schema:recipeCategory">Dessert</span></li>
+      <li><strong>Yield:</strong> <span property="schema:recipeYield">24 cookies</span></li>
+    </ul>
+    <h3>Ingredients</h3>
+    <ul>
+      <li property="schema:recipeIngredient">2 cups all-purpose flour</li>
+      <li property="schema:recipeIngredient">1/2 cup sugar</li>
+      <li property="schema:recipeIngredient">1/2 cup brown sugar</li>
+      <li property="schema:recipeIngredient">1 cup butter, softened</li>
+      <li property="schema:recipeIngredient">1 egg</li>
+      <li property="schema:recipeIngredient">1 tsp vanilla extract</li>
+      <li property="schema:recipeIngredient">1/2 tsp baking powder</li>
+      <li property="schema:recipeIngredient">1/4 tsp salt</li>
+    </ul>
+    <h3>Instructions</h3>
+    <ol>
+      <li property="schema:recipeInstructions">Preheat your oven to 350°F (175°C).</li>
+      <li property="schema:recipeInstructions">Cream together the butter, sugar, and brown sugar until smooth.</li>
+      <li property="schema:recipeInstructions">Add the egg and vanilla extract, mixing well.</li>
+      <li property="schema:recipeInstructions">In a separate bowl, combine flour, baking powder, and salt; gradually blend this into the creamed mixture.</li>
+      <li property="schema:recipeInstructions">Drop spoonfuls of dough onto a baking sheet and bake for 15 minutes or until lightly golden.</li>
+    </ol>
+    <div property="schema:aggregateRating" typeof="schema:AggregateRating">
+      <h3>Rating</h3>
+      <span property="schema:ratingValue">4.8</span>/5 from <span property="schema:reviewCount">45</span> reviews
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+</body>
+</html>
