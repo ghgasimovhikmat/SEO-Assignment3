@@ -1,3 +1,4 @@
+<!-- recipe-rdfa.html -->
 <!DOCTYPE html>
 <html lang="en" prefix="schema: https://schema.org/">
 <head>
@@ -12,6 +13,14 @@
     <h1>Delicious Web Development Cookies Recipe</h1>
   </header>
   <main about="" typeof="schema:Recipe">
+    <!-- Optional properties for enhanced snippet -->
+    <meta property="schema:prepTime" content="PT20M" />
+    <meta property="schema:cookTime" content="PT15M" />
+    <meta property="schema:totalTime" content="PT35M" />
+    <meta property="schema:keywords" content="cookies, web development, coding snack" />
+    <div property="schema:nutrition" typeof="schema:NutritionInformation">
+      <span property="schema:calories">250 calories</span>
+    </div>
     <h2 property="schema:name">Web Development Cookies</h2>
     <p property="schema:description">A fun and delicious cookies recipe inspired by web development. Perfect for a coding break!</p>
     <img property="schema:image" src="images/cookies.jpg" alt="Web Development Cookies">

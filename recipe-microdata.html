@@ -12,17 +12,27 @@
     <h1>Delicious Web Development Cookies Recipe</h1>
   </header>
   <main itemscope itemtype="https://schema.org/Recipe">
+    <!-- Optional properties to satisfy Rich Results warnings -->
+    <meta itemprop="prepTime" content="PT20M" />
+    <meta itemprop="cookTime" content="PT15M" />
+    <meta itemprop="totalTime" content="PT35M" />
+    <meta itemprop="keywords" content="cookies, web development, coding snack" />
+    <section itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
+      <span itemprop="calories">250 calories</span>
+    </section>
     <section>
       <h2 itemprop="name">Web Development Cookies</h2>
       <p itemprop="description">A fun and delicious cookies recipe inspired by web development. Perfect for a coding break!</p>
       <img itemprop="image" src="images/cookies.jpg" alt="Web Development Cookies">
       <ul>
-        <li><strong>Author:</strong> <span itemprop="author">Chef Code</span></li>
+        <li><strong>Author:</strong> <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Chef Code</span></span></li>
         <li><strong>Published:</strong> <time itemprop="datePublished" datetime="2023-04-01">April 1, 2023</time></li>
         <li><strong>Cuisine:</strong> <span itemprop="recipeCuisine">American</span></li>
         <li><strong>Category:</strong> <span itemprop="recipeCategory">Dessert</span></li>
         <li><strong>Yield:</strong> <span itemprop="recipeYield">24 cookies</span></li>
       </ul>
+    </section>
+    <section>
       <h3>Ingredients</h3>
       <ul>
         <li itemprop="recipeIngredient">2 cups all-purpose flour</li>
@@ -34,6 +44,8 @@
         <li itemprop="recipeIngredient">1/2 tsp baking powder</li>
         <li itemprop="recipeIngredient">1/4 tsp salt</li>
       </ul>
+    </section>
+    <section>
       <h3>Instructions</h3>
       <ol>
         <li itemprop="recipeInstructions">Preheat your oven to 350°F (175°C).</li>
